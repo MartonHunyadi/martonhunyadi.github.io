@@ -8,7 +8,7 @@ font-weight: bold;
 text-align: center;}
 
 
-/* Közös tároló: kép balra, szöveg jobbra */
+
 .bemutatkozas {
     display: flex;
     align-items: flex-start;
@@ -41,7 +41,6 @@ h2 {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
-    line-height: 1.1;
     text-align: left;
 }
 
@@ -101,7 +100,6 @@ h2 {
 
 .projects {
     font-family: "Sora", sans-serif; 
-
     align-items: flex-start;
     gap: 0px;
     margin: 0px 300px 80px;
@@ -109,7 +107,18 @@ h2 {
     padding: 14px 40px 48px;
 }
 
+.projects h2{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
 .projects h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.projects h4{
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -122,12 +131,11 @@ h2 {
   box-sizing: border-box;
 }
 
-/* A kép és a szöveg közös tárolója */
 .project-card {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-
+flex-direction: column;
   width: 90%;
   max-width: 760px;
   margin: 40px auto;
@@ -146,6 +154,12 @@ h2 {
 
   margin: 0;
   border: 0;
+}
+
+.project-card__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
 }
 
 .project-card__content {
@@ -211,8 +225,9 @@ h2 {
 .project-card__content {
   width: 100%;
 }
-
-
+.project-card h2, h3 {
+  display: inline;
+}
 
 
 .button {
