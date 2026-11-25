@@ -1,0 +1,399 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ramy Ayman — Portfolio</title>
+    <!-- Tailwind CSS v3 with Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts for precision editorial grotesque/sans typography -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                '"Plus Jakarta Sans"',
+                "Helvetica Neue",
+                "Arial",
+                "sans-serif",
+              ],
+              display: ['"Plus Jakarta Sans"', "sans-serif"],
+            },
+            letterSpacing: {
+              tighter: "-0.06em",
+              tightest: "-0.08em",
+            },
+          },
+        },
+      };
+    </script>
+    <style data-purpose="typography-adjustments">
+      /* Masthead giant display typography rules */
+      .giant-portfolio {
+        font-size: clamp(4.5rem, 15.5vw, 15.8rem);
+        line-height: 0.84;
+        letter-spacing: -0.075em;
+        transform: scaleY(0.97);
+      }
+
+      .tracking-snug-custom {
+        letter-spacing: -0.035em;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white text-[#111111] font-sans antialiased min-h-screen selection:bg-neutral-900 selection:text-white"
+  >
+    <!-- BEGIN: MainContainer -->
+    <main
+      class="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-14 py-8 lg:py-12 flex flex-col justify-between"
+    >
+      <!-- BEGIN: TopHeader -->
+      <header class="w-full pt-1 pb-16 md:pb-24">
+        <!-- Top Meta Info & Wireframe Sphere Icon -->
+        <div class="flex items-start justify-between">
+          <div
+            class="flex flex-col space-y-1.5"
+            data-purpose="presentation-title"
+          >
+            <!-- Wireframe Globe SVG -->
+            <div aria-hidden="true" class="w-9 h-9 text-neutral-800 mb-1">
+              <svg
+                class="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewbox="0 0 100 60"
+              >
+                <!-- Outer Ellipse -->
+                <ellipse cx="50" cy="30" rx="46" ry="24"></ellipse>
+                <!-- Inner Latitudinal Lines -->
+                <ellipse cx="50" cy="30" rx="30" ry="24"></ellipse>
+                <ellipse cx="50" cy="30" rx="14" ry="24"></ellipse>
+                <!-- Horizontal and Vertical Axis Lines -->
+                <line x1="4" x2="96" y1="30" y2="30"></line>
+                <line x1="50" x2="50" y1="6" y2="54"></line>
+                <path d="M10,18 Q50,23 90,18"></path>
+                <path d="M10,42 Q50,37 90,42"></path>
+              </svg>
+            </div>
+            <span
+              class="text-[12px] font-medium tracking-tight text-neutral-800"
+              >09 Jan, 2026</span
+            >
+            <h1
+              class="text-[14px] font-bold tracking-tight text-neutral-950 leading-none"
+            >
+              Creative Presentation
+            </h1>
+            <p class="text-[12px] font-normal tracking-tight text-neutral-700">
+              Presented By: Ramy Ayman
+            </p>
+          </div>
+        </div>
+        <!-- Sub-header metadata row above Portfolio -->
+        <div
+          class="mt-16 sm:mt-24 pt-4 flex flex-wrap items-center justify-between text-[11px] sm:text-[12px] text-neutral-700 font-medium tracking-normal gap-y-2"
+        >
+          <div class="flex items-center space-x-1 sm:space-x-1.5">
+            <span>Art Director</span>
+            <span class="text-neutral-400 font-light">/</span>
+            <span>Brand Designer</span>
+            <span class="text-neutral-400 font-light">/</span>
+            <span>Illustrator</span>
+          </div>
+          <div
+            class="flex items-center space-x-6 sm:space-x-10 text-neutral-800 font-medium"
+          >
+            <a
+              class="hover:text-black transition-colors"
+              href="mailto:gdramyayman@gmail.com"
+              >gdramyayman@gmail.com</a
+            >
+            <a
+              class="hover:text-black transition-colors"
+              href="tel:+01113766487"
+              >+0111 37 66 487</a
+            >
+            <span>Cairo, Egypt</span>
+          </div>
+        </div>
+      </header>
+      <!-- END: TopHeader -->
+      <!-- BEGIN: MastheadSection -->
+      <section
+        aria-label="Portfolio Title Banner"
+        class="w-full select-none overflow-hidden pb-12 sm:pb-20"
+      >
+        <h2
+          class="giant-portfolio font-[850] text-[#161616] tracking-tightest m-0 p-0 block text-left"
+        >
+          Portfolio
+        </h2>
+      </section>
+      <!-- END: MastheadSection -->
+      <!-- BEGIN: SectionDivider -->
+      <div
+        class="w-full flex items-center justify-between text-[11px] sm:text-[12px] text-neutral-800 font-medium pb-8 border-b border-transparent"
+      >
+        <span>Creative Presentation</span>
+        <span>09 Jan, 2026</span>
+      </div>
+      <!-- END: SectionDivider -->
+      <!-- BEGIN: ProfileHeroSection -->
+      <section
+        class="w-full pt-4 pb-20 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-14 items-start"
+      >
+        <!-- Left: Stylized Illustration Box -->
+        <div class="md:col-span-5 lg:col-span-5 flex justify-start">
+          <div
+            class="w-full max-w-[390px] aspect-[1/1] rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-sm relative bg-[#2a0e36]"
+            data-purpose="illustrative-portrait"
+          >
+            <!-- Stylized vector artwork recreating the designer's profile illustration -->
+            <svg
+              class="w-full h-full"
+              viewbox="0 0 400 400"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <!-- Ambient face lighting -->
+                <radialgradient
+                  cx="28%"
+                  cy="38%"
+                  fx="25%"
+                  fy="32%"
+                  id="faceGlow"
+                  r="55%"
+                >
+                  <stop offset="0%" stop-color="#ea739f"></stop>
+                  <stop offset="45%" stop-color="#cf5086"></stop>
+                  <stop offset="85%" stop-color="#b63872"></stop>
+                  <stop offset="100%" stop-color="#831b53"></stop>
+                </radialgradient>
+                <!-- Subtle neck shadow / lighting -->
+                <lineargradient
+                  id="neckGrad"
+                  x1="20%"
+                  x2="70%"
+                  y1="60%"
+                  y2="90%"
+                >
+                  <stop offset="0%" stop-color="#cf5086"></stop>
+                  <stop offset="60%" stop-color="#c4487e"></stop>
+                  <stop offset="100%" stop-color="#942a5f"></stop>
+                </lineargradient>
+                <!-- Inner ear highlight -->
+                <lineargradient
+                  id="earGrad"
+                  x1="0%"
+                  x2="100%"
+                  y1="0%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#c9568b"></stop>
+                  <stop offset="100%" stop-color="#8f245a"></stop>
+                </lineargradient>
+              </defs>
+              <!-- Background Card Canvas -->
+              <rect fill="#2a0c35" height="400" width="400"></rect>
+              <!-- Hand-drawn background edge texture aura -->
+              <path
+                d="M0,0 L400,0 L400,400 L0,400 Z"
+                fill="#260b30"
+                opacity="0.9"
+              ></path>
+              <!-- Hair, Cap & Head Silhouette Backing -->
+              <path
+                d="M 22,250 
+                     C 22,180 20,130 50,85 
+                     C 80,45 140,38 185,50 
+                     C 190,105 180,180 195,250 
+                     C 170,250 70,270 22,250 Z"
+                fill="#21082b"
+              ></path>
+              <!-- Face & Neck Profile Geometry -->
+              <!-- Profile contour from forehead, nose, lips down to neck -->
+              <path
+                d="M 30,158
+                     C 42,130 56,105 85,92
+                     C 105,83 125,98 140,125
+                     C 152,148 160,185 158,235
+                     C 155,275 145,295 105,325
+                     C 95,332 80,335 70,330
+                     C 65,327 68,312 75,304
+                     C 83,295 86,285 75,270
+                     C 65,256 30,285 22,272
+                     C 18,266 22,256 32,246
+                     C 38,240 37,235 34,228
+                     C 26,210 22,192 30,158 Z"
+                fill="url(#faceGlow)"
+              ></path>
+              <!-- Stylized Nose & Brow Extension -->
+              <path
+                d="M 32,152 
+                     C 28,162 25,178 35,188 
+                     C 38,191 42,198 42,204 
+                     C 41,215 32,224 24,236 
+                     C 21,241 21,245 28,248 
+                     C 48,255 72,252 82,232 
+                     C 88,220 85,180 65,160 
+                     Z"
+                fill="#d95d8f"
+                opacity="0.9"
+              ></path>
+              <!-- Ear Silhouette and fold -->
+              <path
+                d="M 124,204 
+                     C 152,198 174,226 155,252 
+                     C 142,269 116,252 118,228 
+                     Z"
+                fill="url(#earGrad)"
+              ></path>
+              <!-- Neck / Shoulder sweep connecting to bottom right -->
+              <path
+                d="M 98,320 
+                     C 132,328 172,342 205,385 
+                     L 85,385 
+                     C 82,370 78,350 72,340 
+                     Z"
+                fill="url(#neckGrad)"
+              ></path>
+              <!-- Stylized Full Beard & Mustache (Dark deep plum) -->
+              <path
+                d="M 38,242
+                     C 35,248 30,260 30,270
+                     C 30,282 38,295 44,302
+                     C 44,302 36,314 30,324
+                     C 24,334 26,346 36,350
+                     C 44,354 50,352 56,346
+                     C 50,360 48,375 58,382
+                     C 68,390 102,390 120,380
+                     C 138,370 148,338 144,310
+                     C 140,280 130,268 116,264
+                     C 106,260 88,272 75,282
+                     C 62,294 56,288 56,280
+                     C 56,268 64,258 58,250
+                     C 54,244 45,240 38,242 Z"
+                fill="#1b0621"
+              ></path>
+              <!-- Glasses Wireframe & Lens -->
+              <!-- Amber/Yellow Round Eyeglass Lens -->
+              <circle
+                cx="58"
+                cy="235"
+                fill="#eed084"
+                fill-opacity="0.9"
+                r="14"
+              ></circle>
+              <circle
+                cx="58"
+                cy="235"
+                r="14"
+                stroke="#e0be6c"
+                stroke-width="1.8"
+              ></circle>
+              <!-- Thin Golden Wireframe Temple extending across face -->
+              <path
+                d="M 68,231 C 100,215 155,188 175,190 C 190,192 195,210 195,220"
+                fill="none"
+                stroke="#e2c474"
+                stroke-linecap="round"
+                stroke-width="1.6"
+              ></path>
+              <!-- Subtle texture overlay -->
+              <rect
+                fill="none"
+                height="400"
+                stroke="#eed084"
+                stroke-opacity="0.05"
+                stroke-width="1"
+                width="400"
+              ></rect>
+            </svg>
+          </div>
+        </div>
+        <!-- Right: Narrative & Biography -->
+        <div
+          class="md:col-span-7 lg:col-span-7 flex flex-col justify-start pt-2 md:pt-4 md:pl-2 lg:pl-6"
+          data-purpose="bio-content"
+        >
+          <!-- Big Salutation Title -->
+          <div class="mb-8 md:mb-12">
+            <h3
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-950 leading-tight"
+            >
+              Hello!
+            </h3>
+            <h3
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-950 leading-tight"
+            >
+              I'm Ramy Ayman
+            </h3>
+          </div>
+          <!-- Description Paragraphs -->
+          <div class="space-y-6 max-w-[480px]">
+            <p
+              class="text-[13px] sm:text-[14px] leading-relaxed text-neutral-900 font-medium"
+            >
+              A multidisciplinary designer exploring the intersection of
+              culture, emotion, and aesthetics.
+            </p>
+            <p
+              class="text-[12.5px] sm:text-[13.5px] leading-relaxed text-neutral-800 font-normal text-justify"
+            >
+              I explore the intersection of culture, emotion, and aesthetics to
+              create visual systems that resonate. To me, design is more than
+              just aesthetics; it's a tool to tell stories, navigate identities,
+              and find the perfect balance between enduring values and constant
+              change
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END: ProfileHeroSection -->
+      <!-- BEGIN: MainFooter -->
+      <footer
+        class="w-full pt-10 pb-6 border-t border-transparent text-[11px] sm:text-[12px] text-neutral-800 font-medium"
+        data-purpose="page-footer"
+      >
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+        >
+          <!-- Email -->
+          <div>
+            <a
+              class="hover:text-black transition-colors"
+              href="mailto:gdramyayman@gmail.com"
+            >
+              gdramyayman@gmail.com
+            </a>
+          </div>
+          <!-- Phone number centered/offset -->
+          <div class="sm:text-center">
+            <a
+              class="hover:text-black transition-colors"
+              href="tel:+01113766487"
+            >
+              +0111 37 66 487
+            </a>
+          </div>
+          <!-- Location -->
+          <div class="sm:text-right">
+            <span>Cairo, Egypt</span>
+          </div>
+        </div>
+      </footer>
+      <!-- END: MainFooter -->
+    </main>
+    <!-- END: MainContainer -->
+  </body>
+</html>

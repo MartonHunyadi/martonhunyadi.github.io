@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+p{font-family: sora;}
+.studies{background-color: #fff;}
+
+h1{font-family: "Sora", sans-serif;
+font-size: 640%;
+font-weight: bold;
+text-align: center;}
+
+
+/* Közös tároló: kép balra, szöveg jobbra */
+.bemutatkozas {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px;
+
+    width: 80%;
+    max-width: 1100px;
+    margin: 140px auto 80px;
+
+    border-bottom: 1px solid #000000;
+}
+
+#Profil_pic {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: 0;
+
+    border-left: 1px solid #030303;
+}
+
+.bemutatkozo-szoveg {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 0 48px;
+}
+
+h2 {
+    font-family: "Sora", sans-serif;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.bemutatkozo-szoveg p {
+    margin: 6% 0 0;
+    font-size: 120%;
+    line-height: 1.14;
+}
+
+.study_box {
+    font-family: "Sora", sans-serif; 
+
+    align-items: flex-start;
+    gap: 0px;
+    margin: 0px 300px 80px;
+
+    padding: 14px 40px 48px;
+}
+
+.study_box h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: left;
+}
+
+
+.CV__button {
+  display: inline-block;
+  padding: 8px 13px;
+
+  border: 1px solid #000;
+  border-radius: 6px;
+
+  background-color: #000;
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.CV__button:hover {
+  background-color: #333;
+}
+
+.CV__button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+#cv {
+  font-size: 10px;
+}
+
+.projects {
+    font-family: "Sora", sans-serif; 
+
+    align-items: flex-start;
+    gap: 0px;
+    margin: 0px 300px 80px;
+
+    padding: 14px 40px 48px;
+}
+
+.projects h3{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 0.5;
+    text-align: left;
+}
+
+.project-card,
+.project-card * {
+  box-sizing: border-box;
+}
+
+/* A kép és a szöveg közös tárolója */
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  width: 90%;
+  max-width: 760px;
+  margin: 40px auto;
+
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.project-card__image {
+  display: block;
+  flex: 0 0 calc((100% - 24px) / 2);
+
+  width: calc((100% - 24px) / 2);
+  aspect-ratio: 368 / 266;
+  object-fit: cover;
+
+  margin: 0;
+  border: 0;
+}
+
+.project-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-card .project-card__title {
+  margin: 0 0 12px;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+}
+
+
+.project-card .project-card__description {
+  margin: 0 0 12px;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.project-card__button {
+  display: inline-block;
+  padding: 8px 13px;
+
+  border: 1px solid #000;
+  border-radius: 6px;
+
+  background-color: #000;
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.project-card__button:hover {
+  background-color: #333;
+}
+
+.project-card__button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+
+.project-card__image {
+  flex: none;
+  width: 100%;
+}
+
+.project-card__content {
+  width: 100%;
+}
+
+
+
+
+.button {
+    border: 1px solid #030303;
+}
+
+
+
+#bolygo_pic {
+  display: block;
+  width: 25%;
+  height: auto;
+  aspect-ratio: 368 / 266;
+  object-fit: cover;
+  object-position: 50% 15%;
+  margin: 0;
+}
+
+#warka_tower_pic {
+  display: block;
+  width: 25%;
+  height: auto;
+  aspect-ratio: 368 / 266;
+  object-fit: cover;
+  object-position: 50% 15%;
+  margin: 0;
+}
+
+body {
+
+}
